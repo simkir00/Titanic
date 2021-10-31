@@ -7,6 +7,3 @@ test = dm.prepare_test_data()
 
 mm.create_rf_model()
 mm.make_prediction(test)
-
-# Оставшийся pipeline IN PROGRESS
-# Смотри notebooks/Titanic.ipynb
