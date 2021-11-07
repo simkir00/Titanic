@@ -1,0 +1,6 @@
+src\data\load_and_prepare.py:26:101: E501 line too long (106 > 100 characters)
+    train_data['Age'] = train_data.groupby(['Sex', 'Pclass'])['Age'].apply(lambda x: x.fillna(x.median()))
+                                                                                                    ^
+src\data\load_and_prepare.py:49:101: E501 line too long (104 > 100 characters)
+    test_data['Age'] = test_data.groupby(['Sex', 'Pclass'])['Age'].apply(lambda x: x.fillna(x.median()))
+                                                                                                    ^

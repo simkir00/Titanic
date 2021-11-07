@@ -1,0 +1,2 @@
+src\models\create_train_predict.py:5:1 'sklearn.model_selection.train_test_split' imported but unused
+src\models\create_train_predict.py:51:11 f-string is missing placeholders
