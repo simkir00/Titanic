@@ -1,14 +1,14 @@
 import os
 import pandas as pd
-
+import src.data.load_and_prepare as dm
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
 
 import pickle
 
-import src.data.load_and_prepare as dm
-from definition import ROOT_DIR
+cur_dir = os.path.dirname(os.path.realpath(__file__))
+ROOT_DIR = os.path.dirname(os.path.dirname(cur_dir))
 
 PREPROCESSED_TRAIN_DATA_PATH = os.path.join(ROOT_DIR, "data/processed/train.csv")
 PREPROCESSED_TEST_DATA_PATH = os.path.join(ROOT_DIR, "data/processed/test.csv")
@@ -35,6 +35,7 @@ def create_rf_model():
 
     for max_depth in max_depth_values:
         for n_estimators in n_estimators_values:
+            # print(f"AHA: {max_depth} and {n_estimators}")
 
             clf = RandomForestClassifier(n_estimators=n_estimators, max_depth=max_depth)
             mean_cross_val_score = cross_val_score(clf, X, y, cv=5).mean()
@@ -49,6 +50,7 @@ def create_rf_model():
     pickle.dump(best_model, open(MODEL_PATH, 'wb'))
 
     print(f"RandomForest classifier created!")
+    return best_model
 
 
 def train_model():

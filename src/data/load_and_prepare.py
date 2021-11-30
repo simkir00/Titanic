@@ -1,7 +1,8 @@
 import os
 import pandas as pd
 
-from definition import ROOT_DIR
+cur_dir = os.path.dirname(os.path.realpath(__file__))
+ROOT_DIR = os.path.dirname(os.path.dirname(cur_dir))
 
 RAW_TRAIN_DATA_PATH = os.path.join(ROOT_DIR, "data/raw/train.csv")
 RAW_TEST_DATA_PATH = os.path.join(ROOT_DIR, "data/raw/test.csv")

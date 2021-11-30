@@ -1,0 +1,10 @@
+Name                                 Stmts   Miss  Cover
+--------------------------------------------------------
+src__init__.py                          0      0   100%
+srcdata__init__.py                      0      0   100%
+srcdataload_and_prepare.py             31      0   100%
+srcmodels__init__.py                    0      0   100%
+srcmodelscreate_train_predict.py       15     15     0%
+srcteststest_data.py                   16      0   100%
+--------------------------------------------------------
+TOTAL                                   62     15    76%
