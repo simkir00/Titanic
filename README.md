@@ -13,4 +13,4 @@ Titanic Project with ML Engineering approach
    
  В ветке _tests_ добавлены скрипты для тестирования исходного кода, а также представлен отчёт о покрытии кода тестами.  
  
- В ветке _cli-snakemake_ добавлены реализация CLI, а также Snakemake file
+ В ветке _cli-snakemake_ добавлены реализация CLI, а также Snakemake файл.
