@@ -9,7 +9,6 @@ sys.path.append(parentdir)
 
 import data.load_and_prepare as dm
 
-
 # Тестирование с генерацией большого количества тестов
 # Построчная проверка обработанных данных на отсутствие пустых значений
 n_train = len(dm.load_data(dm.RAW_TRAIN_DATA_PATH))

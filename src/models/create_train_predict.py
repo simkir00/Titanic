@@ -2,7 +2,6 @@ import os
 import pandas as pd
 import src.data.load_and_prepare as dm
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
 
 import pickle
