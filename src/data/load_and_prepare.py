@@ -12,7 +12,7 @@ NEW_TEST_DATA_PATH = os.path.join(ROOT_DIR, "data/processed/test.csv")
 
 
 def load_data(path):
-    data = pd.read_csv(path, index_col=0)
+    data = pd.read_csv(path, index_col=0, encoding='utf8')
     return data
 
 
