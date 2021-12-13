@@ -8,12 +8,12 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
         with:
-          python-version: '3.9'
+          python-version: '3.7'
       - name: Install requirements
         run: pip install -r requirements.txt
       - name: Run tests
         run: pytest --cov src
       - name: Codestyle tests
-        run: pycodestyle src
+        run: pycodestyle --max-line-length=120 --ignore=E402 src
       - name: Linters tests
         run: pyflakes src
