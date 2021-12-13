@@ -14,6 +14,6 @@ jobs:
       - name: Run tests
         run: pytest --cov src
       - name: Codestyle tests
-        run: pycodestyle src
+        run: pycodestyle --max-line-length=120 --ignore=E402 src
       - name: Linters tests
         run: pyflakes src

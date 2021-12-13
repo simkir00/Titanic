@@ -48,7 +48,7 @@ def create_rf_model():
     best_model = RandomForestClassifier(n_estimators=best_n_estimators, max_depth=best_max_depth)
     pickle.dump(best_model, open(MODEL_PATH, 'wb'))
 
-    print(f"RandomForest classifier created!")
+    print("RandomForest classifier created!")
     return best_model
 
 
